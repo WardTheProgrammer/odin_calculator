@@ -9,37 +9,37 @@
 </head>
 
 <body>
-    <table id="calcu">
+    <table id="calculator">
         <tr>
-            <td colspan="3">
-                <input type="text" id="result">
-            </td>
-            <td><input type="button" value="c"></td>
-        </tr>
-
-        <tr>
-            <td><input type="button" value="1"></td>
-            <td><input type="button" value="2"></td>
-            <td><input type="button" value="3"></td>
-            <td><input type="button" value="/"></td>
+            <td colspan="3"><input type="text" id="display"></td>
+            <td><input type="button" value="=" class="operation"></td>
         </tr>
         <tr>
-            <td><input type="button" value="4"></td>
-            <td><input type="button" value="5"></td>
-            <td><input type="button" value="6"></td>
-            <td><input type="button" value="*"></td>
+            <td><input type="button" value="1" class="number"></td>
+            <td><input type="button" value="2" class="number"></td>
+            <td><input type="button" value="3" class="number"></td>
+            <td><input type="button" value="/" class="operation"></td>
         </tr>
         <tr>
-            <td><input type="button" value="7"></td>
-            <td><input type="button" value="8"></td>
-            <td><input type="button" value="9"></td>
-            <td><input type="button" value="-"></td>
+            <td><input type="button" value="4" class="number"></td>
+            <td><input type="button" value="5" class="number"></td>
+            <td><input type="button" value="6" class="number"></td>
+            <td><input type="button" value="*" class="operation"></td>
         </tr>
         <tr>
-            <td><input type="button" value="0"></td>
-            <td><input type="button" value="."></td>
-            <td><input type="button" value="="></td>
-            <td><input type="button" value="+"></td>
+            <td><input type="button" value="7" class="number"></td>
+            <td><input type="button" value="8" class="number"></td>
+            <td><input type="button" value="9" class="number"></td>
+            <td><input type="button" value="-" class="operation"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" class="number"></td>
+            <td><input type="button" value="." class="operation"></td>
+            <td><input type="button" value="+" class="operation"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="C" class="operation"></td>
+            <td colspan="2"><input type="button" value="AC" class="operation"></td>
         </tr>
     </table>
     <script src="script.js"></script>

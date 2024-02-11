@@ -35,3 +35,32 @@ const operate = (num1, num2, operation) => {
             break;
     }
 }
+
+const display = document.getElementById('display');
+const numButtons = document.querySelectorAll('.number');
+const operationButtons = document.querySelectorAll('.operation');
+
+
+numButtons.forEach(numButton => {
+    numButton.addEventListener('click', (e) => {
+        display.value += numButton.value;
+    })
+})
+
+operationButtons.forEach(operationButton => {
+    operationButton.addEventListener('click', (e) => {
+        switch (operationButton.value) {
+            case 'AC':
+                display.value = '';
+                break;
+            case 'C':
+                display.value = display.value.slice(0, -1);
+                break;
+            case '=':
+                break;
+            default:
+                display.value += operationButton.value;
+                break;
+        }
+    })
+})
